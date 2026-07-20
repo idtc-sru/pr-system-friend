@@ -1,13 +1,106 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <base target="_top">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>โครงการเพื่อนชวนเพื่อนเรียน มหาวิทยาลัยราชภัฏสุราษฎร์ธานี</title>
+    <title>โครงการเพื่อนชวนเพื่อนเรียน - ปิดการร่วมกิจกรรม</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Load Google Fonts (Prompt for Thai language) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <iframe style="width: 100%; height: 100vh;" scrolling="yes" src="https://script.google.com/macros/s/AKfycbwJ_NizFlzkxNosG_8pGfc42Sp7fE9x79og22yk0Bkc6_p--pk-wfGATV8KqfYhfPvBWg/exec" frameborder="0"></iframe>
+<body class="min-h-screen bg-gradient-to-br from-orange-50 to-orange-100 text-gray-800 flex flex-col">
+
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-orange-500 text-white p-2 rounded-lg shadow-sm">
+                    <i data-lucide="book-open" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-gray-900 leading-tight">โครงการเพื่อนชวนเพื่อนเรียน</h1>
+                    <p class="text-sm text-gray-500">มหาวิทยาลัยราชภัฏสุราษฎร์ธานี</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-3xl mx-auto px-4 py-12 flex items-center justify-center w-full">
+        
+        <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-2xl shadow-orange-900/5 border border-orange-100 w-full text-center relative overflow-hidden">
+            
+            <!-- Background decorative elements -->
+            <div class="absolute top-0 right-0 w-40 h-40 bg-orange-50 rounded-bl-full z-0 opacity-50"></div>
+            <div class="absolute bottom-0 left-0 w-32 h-32 bg-orange-50 rounded-tr-full z-0 opacity-50"></div>
+
+            <div class="relative z-10 flex flex-col items-center">
+                
+                <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mb-6 text-gray-400 shadow-inner ring-4 ring-gray-50">
+                    <i data-lucide="lock" class="w-10 h-10" stroke-width="2.5"></i>
+                </div>
+
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+                    ปิดการร่วมกิจกรรมแล้ว
+                </h2>
+                <p class="text-gray-600 mb-8 text-lg px-4">
+                    บัดนี้ โครงการ <span class="font-semibold text-gray-800">"พี่ชวนน้องเรียน"</span> ได้ปิดการร่วมกิจกรรมแล้ว<br class="hidden sm:block"/> 
+                    ขอขอบคุณนักศึกษาทุกท่านที่ให้ความสนใจและเข้าร่วมเป็นส่วนหนึ่งของโครงการ
+                </p>
+
+                <div class="w-full bg-gradient-to-r from-orange-50 to-amber-50 p-6 sm:p-8 rounded-2xl border border-orange-100 mb-6 text-left shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <div class="bg-white p-3 rounded-full shadow-sm text-orange-500 flex-shrink-0 mt-1">
+                            <i data-lucide="clock" class="w-7 h-7" stroke-width="2.5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg sm:text-xl">การประมวลผลและการบันทึกกิจกรรม</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4 text-base sm:text-lg">
+                                ศูนย์นวัตกรรมและเทคโนโลยีดิจิทัล จะประมวลข้อมูลและบันทึกกิจกรรม <br class="hidden sm:block"/>
+                                <span class="inline-block mt-2 font-bold text-orange-700 bg-orange-100/80 px-3 py-1 rounded-lg border border-orange-200 shadow-sm">
+                                    📍 ฐาน 3 เทคโนโลยีสารสนเทศ (1 กิจกรรม)
+                                </span> <br class="hidden sm:block"/>
+                                ให้นักศึกษาที่ผ่านเกณฑ์
+                            </p>
+                            <div class="inline-flex items-center gap-2 bg-white px-5 py-3 rounded-xl border border-orange-200 text-orange-700 font-bold text-sm sm:text-base shadow-sm">
+                                <span class="relative flex h-3 w-3">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
+                                </span>
+                                ภายในวันที่ 30 กรกฎาคม 2569
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full bg-blue-50 hover:bg-blue-100 transition-colors p-5 rounded-2xl border border-blue-100 flex flex-col sm:flex-row items-center justify-center gap-3 text-blue-900 shadow-sm">
+                    <div class="bg-white p-2 rounded-full shadow-sm">
+                        <i data-lucide="facebook" class="w-7 h-7 text-blue-600"></i>
+                    </div>
+                    <p class="text-sm sm:text-base font-medium">
+                        ติดต่อสอบถามเพิ่มเติม FB: <a href="https://www.facebook.com/IDTCSURAT" target="_blank" rel="noopener noreferrer" class="font-bold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-800 hover:decoration-blue-500 transition-all">IDTC : ศูนย์นวัตกรรมและเทคโนโลยีดิจิทัล</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Render Lucide icons
+        lucide.createIcons();
+    </script>
 </body>
 </html>
